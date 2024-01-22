@@ -3,13 +3,10 @@ By Maymi Sarr
 
 ## Table of Contents
 - [Title](#title)
+- [Purpose](#purpose)
 - [Description](#description)
 - [Installation](#installation)
-- [Link](#link)
-- [Walkthrough Video](#video)
-- [Screenshot](#screenshot)
-
-
+- [Walkthrough video link](#video)
 
 
 ## Purpose
@@ -19,12 +16,10 @@ The purpose of this app is
   
 
 ## Installation
--Node.js
--Inquirer
--MySQL
+<div>Node.js</div>
+<div>Inquirer</div>
+<div>MySQL, MySQL2</div>
 
-## Link
+
 
 ## Walkthrough video
-
-## Screenshot
