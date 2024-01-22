@@ -2,7 +2,14 @@
 
 
 var inquirer = require("inquirer")
-//ca=("mysqil2")
+var mysql2 =require=("mysql2")
+var db=mysql2.createConnection({
+    host: "127.0.0.1",
+    port: 3306,
+    user: "root",
+    password: "Teranga3!",
+    database: "employeeInfo"
+})
 //("cfonts")
 
 inquirer.prompt([
@@ -37,6 +44,7 @@ inquirer.prompt([
         } else if (answers.choice === "Update an employee role") {
 
 
+            
 
     }
 })
