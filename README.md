@@ -1,8 +1,8 @@
-# employeeTracker
+# staffManager
+employeeTracker
 By Maymi Sarr
 
 ## Table of Contents
-- [Title](#title)
 - [Purpose](#purpose)
 - [Description](#description)
 - [Installation](#installation)
@@ -19,8 +19,9 @@ The employee tracker content management system is a user intuitive command-line 
 ## Installation
 <div>Node.js</div>
 <div>Inquirer</div>
-<div>MySQL, MySQL2</div>
+<div>MySQL</div>
+<div>MySQL2</div>
 
 
 
-## Walkthrough video
+## Walkthrough video link
