@@ -38,14 +38,14 @@ inquirer.prompt([
         })
     } else if (answers.choice === "View all employees") {
         db.query("SELECT *  FROM EMPLOYEE", function (err, data) {
-            // console.table(data)
-            // inquirer.console(data)
-            // done(null, true);
+            console.table(data)
+            //inquirer.console(data)
+           // done(null, true);
         })
     } else if (answers.choice === "Add a department") {
         inquirer.prompt({
             type: "input",
-            name: "department", // (not "new departments" bc we are not making a new file or is this nmae linked?does it matter?)
+            name: "department", // (not "new departments" bc we are not making a new file or is this name linked)
             message: "What is the name of the department?",
         })
         .then(answers => {
@@ -61,17 +61,17 @@ inquirer.prompt([
         inquirer.prompt([
             {
                 type: "input",
-                name: "title", // (not "new departments" bc we are not making a new file or is this name linked?does it matter?)
+                name: "title", // (not "new departments" bc we are not making a new file or is this name linked)
                 message: "What is the title of the role?",
             },
             {
                 type: "input",
-                name: "salary", // (not "new departments" bc we are not making a new file or is this name linked?does it matter?)
+                name: "salary", // (not "new departments" bc we are not making a new file or is this name linked)
                 message: "What is the salary of the role?",
             },
             {
                 type: "input",
-                name: "department_id", // (not "new departments" bc we are not making a new file or is this name linked?does it matter?)
+                name: "department_id", // (not "new departments" bc we are not making a new file or is this name linked)
                 message: "What is the department_id of the role?",
             },
 
@@ -116,7 +116,7 @@ inquirer.prompt([
             {
                 type: "list",
                 name: "role", 
-                message: "What is the employee's role ?",
+                message: "What is the employee's role?",
                 choices: [
                     "Sales Lead",
                     "Salesperson",
@@ -145,7 +145,7 @@ inquirer.prompt([
                 ]
             }])
             .then(answers => {
-                db.query(`insert into employees (firstName, lastName, department_id, department) VALUES ("${answers.firstName}", "${answers.lastName}", "${answers.role}", "${answers.manager}",)`, function (err, results) {
+                db.query(`insert into employees (firstName, lastName, role, manager) VALUES ("${answers.firstName}", "${answers.lastName}", "${answers.role}", "${answers.manager}",)`, function (err, results) {
                     if (err) {
                         console.log("Something wrong happened!")
                         return;

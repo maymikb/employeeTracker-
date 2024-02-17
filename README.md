@@ -25,3 +25,5 @@ The employee tracker content management system is a user intuitive command-line 
 
 
 ## Walkthrough video link
+https://drive.google.com/file/d/1fs_vRgij7Zr9PAcN6zgoybk99Mjqg7JI/view
+
